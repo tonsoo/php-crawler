@@ -1,9 +1,9 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Http;
+namespace Tonsoo\PhpCrawler\Http;
 
 use CurlHandle;
-use Tonsoo\SitemapGenerator\Data\Result;
+use Tonsoo\PhpCrawler\Data\Result;
 
 class CurlHttpClient implements HttpClientInterface
 {

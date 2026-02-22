@@ -1,24 +1,24 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Crawler;
+namespace Tonsoo\PhpCrawler\Crawler;
 
 use Carbon\Carbon;
 use InvalidArgumentException;
 use League\Uri\Uri;
-use Tonsoo\SitemapGenerator\Analysis\PageAnalysis;
-use Tonsoo\SitemapGenerator\Analysis\PageAnalyzerInterface;
-use Tonsoo\SitemapGenerator\Crawler\Exception\LimitExceededException;
-use Tonsoo\SitemapGenerator\Data\Page;
-use Tonsoo\SitemapGenerator\Data\Result;
-use Tonsoo\SitemapGenerator\Events\HasEvents;
-use Tonsoo\SitemapGenerator\Events\OnCrawled;
-use Tonsoo\SitemapGenerator\Events\OnFinish;
-use Tonsoo\SitemapGenerator\Events\OnLinkFound;
-use Tonsoo\SitemapGenerator\Events\OnMismatchContent;
-use Tonsoo\SitemapGenerator\Events\OnMissingHtmlBody;
-use Tonsoo\SitemapGenerator\Events\OnStart;
-use Tonsoo\SitemapGenerator\Http\HttpClientInterface;
-use Tonsoo\SitemapGenerator\Logger\LoggerInterface;
+use Tonsoo\PhpCrawler\Analysis\PageAnalysis;
+use Tonsoo\PhpCrawler\Analysis\PageAnalyzerInterface;
+use Tonsoo\PhpCrawler\Crawler\Exception\LimitExceededException;
+use Tonsoo\PhpCrawler\Data\Page;
+use Tonsoo\PhpCrawler\Data\Result;
+use Tonsoo\PhpCrawler\Events\HasEvents;
+use Tonsoo\PhpCrawler\Events\OnCrawled;
+use Tonsoo\PhpCrawler\Events\OnFinish;
+use Tonsoo\PhpCrawler\Events\OnLinkFound;
+use Tonsoo\PhpCrawler\Events\OnMismatchContent;
+use Tonsoo\PhpCrawler\Events\OnMissingHtmlBody;
+use Tonsoo\PhpCrawler\Events\OnStart;
+use Tonsoo\PhpCrawler\Http\HttpClientInterface;
+use Tonsoo\PhpCrawler\Logger\LoggerInterface;
 
 final class Crawler
 {

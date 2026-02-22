@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Events;
+namespace Tonsoo\PhpCrawler\Events;
 
 readonly abstract class CrawlerEvent
 {

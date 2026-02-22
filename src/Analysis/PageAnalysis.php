@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Analysis;
+namespace Tonsoo\PhpCrawler\Analysis;
 
-use Tonsoo\SitemapGenerator\Data\Robots;
+use Tonsoo\PhpCrawler\Data\Robots;
 
 final readonly class PageAnalysis
 {

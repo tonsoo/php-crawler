@@ -1,13 +1,13 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Crawler;
+namespace Tonsoo\PhpCrawler\Crawler;
 
-use Tonsoo\SitemapGenerator\Analysis\DomDocumentPageAnalyzer;
-use Tonsoo\SitemapGenerator\Analysis\PageAnalyzerInterface;
-use Tonsoo\SitemapGenerator\Http\CurlHttpClient;
-use Tonsoo\SitemapGenerator\Http\HttpClientInterface;
-use Tonsoo\SitemapGenerator\Logger\ConsoleLogger;
-use Tonsoo\SitemapGenerator\Logger\LoggerInterface;
+use Tonsoo\PhpCrawler\Analysis\DomDocumentPageAnalyzer;
+use Tonsoo\PhpCrawler\Analysis\PageAnalyzerInterface;
+use Tonsoo\PhpCrawler\Http\CurlHttpClient;
+use Tonsoo\PhpCrawler\Http\HttpClientInterface;
+use Tonsoo\PhpCrawler\Logger\ConsoleLogger;
+use Tonsoo\PhpCrawler\Logger\LoggerInterface;
 
 final class Config
 {

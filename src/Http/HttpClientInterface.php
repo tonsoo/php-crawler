@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Http;
+namespace Tonsoo\PhpCrawler\Http;
 
-use Tonsoo\SitemapGenerator\Data\Result;
+use Tonsoo\PhpCrawler\Data\Result;
 
 interface HttpClientInterface
 {

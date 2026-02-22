@@ -1,9 +1,9 @@
 {
-    "name": "tonsoo/sitemap-generator",
+    "name": "tonsoo/php-crawler",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Tonsoo\\SitemapGenerator\\": "src/"
+            "Tonsoo\\PhpCrawler\\": "src/"
         },
         "files": [
             "src/functions.php"

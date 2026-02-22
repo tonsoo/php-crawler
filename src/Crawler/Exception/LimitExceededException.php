@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Crawler\Exception;
+namespace Tonsoo\PhpCrawler\Crawler\Exception;
 
-use Tonsoo\SitemapGenerator\Exception\CrawlerException;
+use Tonsoo\PhpCrawler\Exception\CrawlerException;
 
 class LimitExceededException extends CrawlerException
 {

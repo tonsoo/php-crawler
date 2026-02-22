@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Exception;
+namespace Tonsoo\PhpCrawler\Exception;
 
 use RuntimeException;
 

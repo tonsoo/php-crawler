@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Analysis;
+namespace Tonsoo\PhpCrawler\Analysis;
 
-use Tonsoo\SitemapGenerator\Data\Result;
+use Tonsoo\PhpCrawler\Data\Result;
 
 interface PageAnalyzerInterface
 {

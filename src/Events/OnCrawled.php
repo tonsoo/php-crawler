@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Events;
+namespace Tonsoo\PhpCrawler\Events;
 
-use Tonsoo\SitemapGenerator\Data\Page;
+use Tonsoo\PhpCrawler\Data\Page;
 
 readonly class OnCrawled extends CrawlerEvent
 {

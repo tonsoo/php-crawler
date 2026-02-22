@@ -1,10 +1,10 @@
 <?php
 
-use Tonsoo\SitemapGenerator\Events\OnMismatchContent;
-use Tonsoo\SitemapGenerator\Extensions\SitemapExtension;
-use Tonsoo\SitemapGenerator\Sitemap\SitemapGenerator;
-use Tonsoo\SitemapGenerator\Sitemap\Writers\RotatingSitemapWriter;
-use Tonsoo\SitemapGenerator\Sitemap\Writers\XmlSitemapWriter;
+use Tonsoo\PhpCrawler\Events\OnMismatchContent;
+use Tonsoo\PhpCrawler\Extensions\SitemapExtension;
+use Tonsoo\PhpCrawler\Sitemap\SitemapGenerator;
+use Tonsoo\PhpCrawler\Sitemap\Writers\RotatingSitemapWriter;
+use Tonsoo\PhpCrawler\Sitemap\Writers\XmlSitemapWriter;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 

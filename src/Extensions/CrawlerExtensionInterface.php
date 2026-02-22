@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Extensions;
+namespace Tonsoo\PhpCrawler\Extensions;
 
-use Tonsoo\SitemapGenerator\Crawler\Crawler;
+use Tonsoo\PhpCrawler\Crawler\Crawler;
 
 interface CrawlerExtensionInterface
 {

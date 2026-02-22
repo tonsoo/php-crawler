@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Data;
+namespace Tonsoo\PhpCrawler\Data;
 
 use League\Uri\Uri;
 

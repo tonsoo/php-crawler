@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Logger;
+namespace Tonsoo\PhpCrawler\Logger;
 
 interface LoggerInterface
 {

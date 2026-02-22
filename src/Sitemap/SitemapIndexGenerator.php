@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Sitemap;
+namespace Tonsoo\PhpCrawler\Sitemap;
 
-use Tonsoo\SitemapGenerator\Sitemap\Entries\SitemapEntry;
+use Tonsoo\PhpCrawler\Sitemap\Entries\SitemapEntry;
 
 class SitemapIndexGenerator
 {

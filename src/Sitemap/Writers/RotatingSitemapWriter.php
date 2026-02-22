@@ -1,11 +1,11 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Sitemap\Writers;
+namespace Tonsoo\PhpCrawler\Sitemap\Writers;
 
 use InvalidArgumentException;
-use Tonsoo\SitemapGenerator\Sitemap\Entries\SitemapEntry;
-use Tonsoo\SitemapGenerator\Sitemap\Entries\UrlEntry;
-use Tonsoo\SitemapGenerator\Sitemap\SitemapIndexGenerator;
+use Tonsoo\PhpCrawler\Sitemap\Entries\SitemapEntry;
+use Tonsoo\PhpCrawler\Sitemap\Entries\UrlEntry;
+use Tonsoo\PhpCrawler\Sitemap\SitemapIndexGenerator;
 
 class RotatingSitemapWriter implements SitemapWriterInterface
 {

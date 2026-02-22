@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Events;
+namespace Tonsoo\PhpCrawler\Events;
 
-use Tonsoo\SitemapGenerator\Extensions\CrawlerExtensionInterface;
+use Tonsoo\PhpCrawler\Extensions\CrawlerExtensionInterface;
 
 /**
  * @template T

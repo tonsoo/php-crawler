@@ -1,11 +1,11 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Analysis;
+namespace Tonsoo\PhpCrawler\Analysis;
 
 use InvalidArgumentException;
 use League\Uri\Uri;
-use Tonsoo\SitemapGenerator\Data\Result;
-use Tonsoo\SitemapGenerator\Data\Robots;
+use Tonsoo\PhpCrawler\Data\Result;
+use Tonsoo\PhpCrawler\Data\Robots;
 
 class DomDocumentPageAnalyzer implements PageAnalyzerInterface
 {

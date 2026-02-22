@@ -1,6 +1,6 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Sitemap\Entries;
+namespace Tonsoo\PhpCrawler\Sitemap\Entries;
 
 final readonly class SitemapEntry
 {

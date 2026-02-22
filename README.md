@@ -10,7 +10,7 @@ A small, dependency-light PHP crawler that walks a site and generates XML sitema
 ## Installation
 
 ```bash
-composer require tonsoo/sitemap-generator
+composer require tonsoo/php-crawler
 ```
 
 ## Quick Start
@@ -18,9 +18,9 @@ composer require tonsoo/sitemap-generator
 ```php
 <?php
 
-use Tonsoo\SitemapGenerator\Extensions\SitemapExtension;
-use Tonsoo\SitemapGenerator\Sitemap\SitemapGenerator;
-use Tonsoo\SitemapGenerator\Sitemap\Writers\RotatingSitemapWriter;
+use Tonsoo\PhpCrawler\Extensions\SitemapExtension;
+use Tonsoo\PhpCrawler\Sitemap\SitemapGenerator;
+use Tonsoo\PhpCrawler\Sitemap\Writers\RotatingSitemapWriter;
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -75,9 +75,9 @@ crawler()
 ### Single sitemap
 
 ```php
-use Tonsoo\SitemapGenerator\Sitemap\SitemapGenerator;
-use Tonsoo\SitemapGenerator\Sitemap\Writers\XmlSitemapWriter;
-use Tonsoo\SitemapGenerator\Extensions\SitemapExtension;
+use Tonsoo\PhpCrawler\Sitemap\SitemapGenerator;
+use Tonsoo\PhpCrawler\Sitemap\Writers\XmlSitemapWriter;
+use Tonsoo\PhpCrawler\Extensions\SitemapExtension;
 
 crawler()
     ->extension(
@@ -95,9 +95,9 @@ crawler()
 ### Rotating sitemap + index
 
 ```php
-use Tonsoo\SitemapGenerator\Sitemap\SitemapGenerator;
-use Tonsoo\SitemapGenerator\Sitemap\Writers\RotatingSitemapWriter;
-use Tonsoo\SitemapGenerator\Extensions\SitemapExtension;
+use Tonsoo\PhpCrawler\Sitemap\SitemapGenerator;
+use Tonsoo\PhpCrawler\Sitemap\Writers\RotatingSitemapWriter;
+use Tonsoo\PhpCrawler\Extensions\SitemapExtension;
 
 crawler()
     ->extension(
@@ -126,12 +126,12 @@ Notes:
 You can subscribe to crawler events to observe or extend behavior:
 
 ```php
-use Tonsoo\SitemapGenerator\Events\OnCrawled;
-use Tonsoo\SitemapGenerator\Events\OnFinish;
-use Tonsoo\SitemapGenerator\Events\OnLinkFound;
-use Tonsoo\SitemapGenerator\Events\OnMismatchContent;
-use Tonsoo\SitemapGenerator\Events\OnMissingHtmlBody;
-use Tonsoo\SitemapGenerator\Events\OnStart;
+use Tonsoo\PhpCrawler\Events\OnCrawled;
+use Tonsoo\PhpCrawler\Events\OnFinish;
+use Tonsoo\PhpCrawler\Events\OnLinkFound;
+use Tonsoo\PhpCrawler\Events\OnMismatchContent;
+use Tonsoo\PhpCrawler\Events\OnMissingHtmlBody;
+use Tonsoo\PhpCrawler\Events\OnStart;
 
 crawler()
     ->onStart(fn (OnStart $event) => print("Starting\n"))
@@ -148,9 +148,9 @@ crawler()
 You can plug in your own implementations:
 
 ```php
-use Tonsoo\SitemapGenerator\Http\HttpClientInterface;
-use Tonsoo\SitemapGenerator\Logger\LoggerInterface;
-use Tonsoo\SitemapGenerator\Analysis\PageAnalyzerInterface;
+use Tonsoo\PhpCrawler\Http\HttpClientInterface;
+use Tonsoo\PhpCrawler\Logger\LoggerInterface;
+use Tonsoo\PhpCrawler\Analysis\PageAnalyzerInterface;
 
 crawler()
     ->httpClient(new YourHttpClient())
@@ -176,7 +176,7 @@ Interfaces to implement:
 If `maxPages` is set and the crawler reaches the limit, it throws `LimitExceededException` **after** finishing the crawl loop:
 
 ```php
-use Tonsoo\SitemapGenerator\Crawler\Exception\LimitExceededException;
+use Tonsoo\PhpCrawler\Crawler\Exception\LimitExceededException;
 
 try {
     crawler()->maxPages(100)->start('https://example.com');

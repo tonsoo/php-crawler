@@ -1,8 +1,8 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Sitemap\Writers;
+namespace Tonsoo\PhpCrawler\Sitemap\Writers;
 
-use Tonsoo\SitemapGenerator\Sitemap\Entries\UrlEntry;
+use Tonsoo\PhpCrawler\Sitemap\Entries\UrlEntry;
 
 interface SitemapWriterInterface
 {

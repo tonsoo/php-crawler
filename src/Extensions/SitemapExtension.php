@@ -1,10 +1,10 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Extensions;
+namespace Tonsoo\PhpCrawler\Extensions;
 
-use Tonsoo\SitemapGenerator\Crawler\Crawler;
-use Tonsoo\SitemapGenerator\Events\OnCrawled;
-use Tonsoo\SitemapGenerator\Sitemap\SitemapGenerator;
+use Tonsoo\PhpCrawler\Crawler\Crawler;
+use Tonsoo\PhpCrawler\Events\OnCrawled;
+use Tonsoo\PhpCrawler\Sitemap\SitemapGenerator;
 
 readonly class SitemapExtension implements CrawlerExtensionInterface
 {

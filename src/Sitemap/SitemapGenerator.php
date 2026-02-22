@@ -1,9 +1,9 @@
 <?php
 
-namespace Tonsoo\SitemapGenerator\Sitemap;
+namespace Tonsoo\PhpCrawler\Sitemap;
 
-use Tonsoo\SitemapGenerator\Sitemap\Entries\UrlEntry;
-use Tonsoo\SitemapGenerator\Sitemap\Writers\SitemapWriterInterface;
+use Tonsoo\PhpCrawler\Sitemap\Entries\UrlEntry;
+use Tonsoo\PhpCrawler\Sitemap\Writers\SitemapWriterInterface;
 
 readonly class SitemapGenerator
 {
