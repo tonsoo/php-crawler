@@ -201,7 +201,7 @@ final class Crawler
         }
 
         if (!$result->isHtmlContentType()) {
-            $this->dispatch(new OnMismatchContent($url));
+            $this->dispatch(new OnMismatchContent($url, $result->contentType));
             $this->config->logger->log("Page '$url' is not text/html");
             return null;
         }

@@ -2,7 +2,7 @@
 
 namespace Tonsoo\SitemapGenerator\Events;
 
-abstract class CrawlerEvent
+readonly abstract class CrawlerEvent
 {
 
 }

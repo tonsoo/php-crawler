@@ -2,9 +2,10 @@
 
 namespace Tonsoo\SitemapGenerator\Events;
 
-class OnMismatchContent extends CrawlerEvent
+readonly class OnMismatchContent extends CrawlerEvent
 {
     public function __construct(
         public string $url,
+        public string $contentType,
     ) { }
 }
