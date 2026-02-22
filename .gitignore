@@ -1,2 +1,2 @@
-sitemaps
-sitemaps/*
+example/sitemaps/*
+/vendor/

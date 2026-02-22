@@ -1,0 +1,30 @@
+{
+    "name": "tonsoo/sitemap-generator",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Tonsoo\\SitemapGenerator\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Alysson",
+            "email": "alyssuuuuu@outlook.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "ext-dom": "*",
+        "nesbot/carbon": "^3.11",
+        "league/uri": "^7.8",
+        "ext-curl": "*",
+        "ext-xmlwriter": "*"
+    },
+    "suggest": {
+        "guzzlehttp/psr7": "Optional: standards-based URI parsing/resolution",
+        "symfony/dom-crawler": "Optional: richer DOM traversal APIs"
+    }
+}
