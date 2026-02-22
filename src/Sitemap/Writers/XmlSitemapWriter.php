@@ -26,8 +26,6 @@ class XmlSitemapWriter implements SitemapWriterInterface
 
     public function add(UrlEntry $entry): void
     {
-        echo "Adding {$entry->url}\n\n";
-
         $this->xml->startElement('url');
 
         $this->xml->writeElement('loc', $entry->url);
