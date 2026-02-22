@@ -34,4 +34,4 @@ crawler()
     )
     // you can add listeners to events
     ->onMismatchContent(fn (OnMismatchContent $event) => print("Page {$event->url} has content {$event->contentType}"))
-    ->start('https://alysson-thoaldo.com.br');
+    ->start('https://your-website.com');
