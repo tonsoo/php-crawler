@@ -16,7 +16,7 @@ crawler()
     ->respectNoIndex()
     ->respectNoFollow()
     ->maxPages(10)
-    ->subscribe(
+    ->extension(
         // you can add multiple extensions
         new SitemapExtension(
             generator: new SitemapGenerator(

@@ -81,7 +81,7 @@ trait HasEvents
         return $this->on(OnFinish::class, $callback);
     }
 
-    public function subscribe(CrawlerExtensionInterface $extension): self
+    public function extension(CrawlerExtensionInterface $extension): self
     {
         $extension->subscribe($this);
         return $this;

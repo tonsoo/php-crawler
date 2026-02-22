@@ -28,7 +28,7 @@ crawler()
     ->preserveHost()
     ->respectCanonical(false)
     ->maxPages(1000)
-    ->subscribe(
+    ->extension(
         new SitemapExtension(
             generator: new SitemapGenerator(
                 writer: new RotatingSitemapWriter(
@@ -80,7 +80,7 @@ use Tonsoo\SitemapGenerator\Sitemap\Writers\XmlSitemapWriter;
 use Tonsoo\SitemapGenerator\Extensions\SitemapExtension;
 
 crawler()
-    ->subscribe(
+    ->extension(
         new SitemapExtension(
             generator: new SitemapGenerator(
                 writer: new XmlSitemapWriter(
@@ -100,7 +100,7 @@ use Tonsoo\SitemapGenerator\Sitemap\Writers\RotatingSitemapWriter;
 use Tonsoo\SitemapGenerator\Extensions\SitemapExtension;
 
 crawler()
-    ->subscribe(
+    ->extension(
         new SitemapExtension(
             generator: new SitemapGenerator(
                 writer: new RotatingSitemapWriter(
