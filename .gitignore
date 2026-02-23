@@ -1,3 +1,4 @@
 examples/sitemaps/*
 examples/sitemap/*
 /vendor/
+.idea/
